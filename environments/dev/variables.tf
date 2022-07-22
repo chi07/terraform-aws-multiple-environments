@@ -1,13 +1,13 @@
-variable AWS_REGION {
+variable "aws_profile" {
+  default = "default"
+}
+variable "aws_region" {
   default = "ap-southeast-1"
 }
-
-variable "aws_profile" {}
-variable "aws_region" {}
 variable "env" {
   default = "dev"
 }
 
 variable azs {
-  type = list(any)
+  default = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 }

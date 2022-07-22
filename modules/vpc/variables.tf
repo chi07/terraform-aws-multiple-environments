@@ -24,8 +24,8 @@ variable "public_subnets" {
 }
 
 variable "aws_profile" {
-  default = ""
+  default = "default"
 }
 variable "aws_region" {
-  default = ""
+  default = "ap-southeast-1"
 }
